@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#4B4A4A"
+    android:background="@color/gris_oscuro"
+    tools:context=".Contacto">
+
+    <TextView
+        android:id="@+id/contacto"
+        android:layout_width="185dp"
+        android:layout_height="49dp"
+        android:text="@string/CONTACTO"
+        android:textColor="@color/white"
+        android:textSize="33dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/titulo"
+        android:layout_width="371dp"
+        android:layout_height="53dp"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        android:textColor="@color/amarillo_clarito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contacto"
+        app:layout_constraintVertical_bias="0.063"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/contendio"
+        android:layout_width="338dp"
+        android:layout_height="60dp"
+        android:textColor="@color/amarillo_clarito"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.564"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/asunto"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="468dp"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        android:textColor="@color/amarillo_clarito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/correoelectronico"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="368dp"
+        android:textSize="19dp"
+        android:textColor="@color/amarillo_clarito"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/titulo_text"
+        android:layout_width="129dp"
+        android:layout_height="31dp"
+        android:text="@string/titulo"
+        android:textSize="18dp"
+        android:textColor="@color/amarillo_clarito"
+        app:layout_constraintBottom_toTopOf="@+id/titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contacto"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/asunto_text"
+        android:layout_width="98dp"
+        android:layout_height="30dp"
+        android:text="@string/asunto"
+        android:textColor="@color/amarillo_clarito"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/asunto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <TextView
+        android:id="@+id/correo_text"
+        android:layout_width="284dp"
+        android:layout_height="29dp"
+        android:text="@string/correo"
+        android:textSize="18dp"
+        android:textColor="@color/amarillo_clarito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/contenido_text"
+        android:layout_width="208dp"
+        android:layout_height="32dp"
+        android:text="@string/contenido"
+        android:textSize="18dp"
+        android:textColor="@color/amarillo_clarito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <TextView
+        android:id="@+id/puntuacion_text"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:text="@string/puntuacion"
+        android:textSize="20dp"
+        android:textColor="@color/amarillo_clarito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="107dp"
+        android:layout_height="51dp"
+        android:text="@string/ENVIAR"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="280dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        android:min="1"
+        android:progressTint="@color/naranja"
+        android:thumbTint="@color/naranja"
+        android:textColor="@color/white"
+        android:max="10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/puntuacion"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:textSize="20dp"
+        android:textColor="@color/amarillo_clarito"
+        android:layout_marginStart="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

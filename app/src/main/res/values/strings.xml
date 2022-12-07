@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FrexesYolanda1Eva</string>
+    <string name="boton1">1</string>
+    <string name="boton2">2</string>
+    <string name="boton3">3</string>
+    <string name="boton4">4</string>
+    <string name="boton5">5</string>
+    <string name="boton6">6</string>
+    <string name="boton7">7</string>
+    <string name="boton8">8</string>
+    <string name="boton9">9</string>
+    <string name="boton0">0</string>
+    <string name="botonigual">=</string>
+    <string name="botondividir">/</string>
+    <string name="botonpor">*</string>
+    <string name="botonmenos">-</string>
+    <string name="botonmas">+</string>
+    <string name="botoninv">INV</string>
+    <string name="CALCULADORA">CALCULADORA</string>
+    <string name="correo">CORREO</string>
+    <string name="titulo">TITULO</string>
+    <string name="contenido">CONTENIDO</string>
+    <string name="asunto">ASUNTO</string>
+    <string name="puntuacion">PUNTUACION</string>
+    <string name="BORRAR">BORRAR</string>
+    <string name="CONTACTO">CONTACTO</string>
+    <string name="ENVIAR">ENVIAR</string>
+    <string name="CUADRADO">CUADRADO</string>
+
+
+
+
+</resources>

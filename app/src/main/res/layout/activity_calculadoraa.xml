@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris_oscuro"
+
+    tools:context=".Calculadora">
+
+    <Button
+        android:id="@+id/botonPOR"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/naranja"
+        android:onClick="operacionpor"
+        android:text="@string/botonpor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:onClick="Escribirdos"
+        android:text="@string/boton2"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/boton5" />
+
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:onClick="Escribirtres"
+        android:text="@string/boton3"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <Button
+        android:id="@+id/boton7"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:onClick="Escribirsiete"
+        android:text="@string/boton7"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/boton6"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:onClick="Escribirseis"
+        android:text="@string/boton6"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <Button
+        android:id="@+id/boton5"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:onClick="Escribircinco"
+        android:text="@string/boton5"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <Button
+        android:id="@+id/boton4"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:onClick="Escribircuatro"
+        android:text="@string/boton4"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2735978" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08344733" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="421dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55950755" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <Button
+        android:id="@+id/boton0"
+        android:layout_width="179dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:onClick="Escribircero"
+        android:text="@string/boton0"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/botonpunto"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:text="."
+        android:textSize="20dp"
+        android:onClick="Escribirpunto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/botonigual"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/naranja"
+        android:onClick="mostrarResultado"
+        android:text="@string/botonigual"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/calculadora_text"
+        android:layout_width="255dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:foregroundTint="@color/amarillo_clarito"
+        android:text="@string/CALCULADORA"
+        android:textColor="#F3CF3E"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/resultaocalculadora"
+        android:layout_width="397dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="4dp"
+        android:foregroundTint="@color/white"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#F3CF3E"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="198dp" />
+
+    <Button
+        android:id="@+id/botonborrar"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/amarillo_clarito"
+        android:onClick="Limpiar"
+        android:text="@string/BORRAR"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <Button
+        android:id="@+id/botoninv"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/naranja"
+        android:onClick="operacioninvertir"
+        android:text="@string/botoninv"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <Button
+        android:id="@+id/botonbarra"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/naranja"
+        android:onClick="operaciondivision"
+        android:text="@string/botondividir"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="101dp" />
+
+    <Button
+        android:id="@+id/botonmenos"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/naranja"
+        android:onClick="operacionmenos"
+        android:text="@string/botonmenos"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/botonPOR"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/boton8"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:onClick="Escribirocho"
+        android:text="@string/boton8"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/boton9"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:onClick="Escribirnueve"
+        android:text="@string/boton9"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:onClick="Escribiruno"
+        android:text="@string/boton1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/boton6" />
+
+    <Button
+        android:id="@+id/botonmas"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/naranja"
+        android:onClick="operacionmas"
+        android:text="@string/botonmas"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <Button
+        android:id="@+id/cuadrado"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/amarillo_clarito"
+        android:text="@string/CUADRADO"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.533" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
